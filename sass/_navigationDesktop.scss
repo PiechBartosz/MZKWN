@@ -3,6 +3,10 @@
 .navigationMain__logo img {
 	display: none;
 }
+.navigationMain {
+	display: none;
+}
+
 @media (min-width: 768px) {
 	.navigationMain {
 		position: fixed;

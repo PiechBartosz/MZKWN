@@ -31,18 +31,132 @@ a {
 	color: colors.$text;
 }
 
-h2,
 h1,
+h2,
 h3 {
 	text-transform: uppercase;
 }
 
 main {
-	margin-top: 10rem;
+	margin-top: 5rem;
 }
 
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
+}
+
+.container {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.titleStyle {
+	font-size: 2.5rem;
+}
+
+.titleStyle {
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+	font-size: 2rem;
+	line-height: 1.6;
+	font-weight: bold;
+	color: colors.$logo;
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.4rem;
+	line-height: 1.6;
+	margin: 4rem 2rem;
+}
+
+.image {
+	min-width: 100%;
+	min-height: 45rem;
+	display: flex;
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+}
+
+.imageSpiritualHealing {
+	background-image: url("../images/image-spiritual-healing.JPG");
+}
+
+.imageAboutMe {
+	background-image: url("../images/monika-zakrzewska.PNG");
+}
+
+.imageWhy {
+	background-image: url("../images/image-why.JPG");
+}
+
+.no-scroll {
+	overflow: hidden;
+	height: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+	.titleStyle {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	main {
+		margin-top: 10rem;
+	}
+
+	.container {
+		margin: 0 auto;
+		height: 80vh;
+		width: 100%;
+		max-width: 1200px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-content: center;
+		justify-content: space-around;
+		align-items: baseline;
+	}
+
+	.containerSecond {
+		align-items: center;
+	}
+
+	.containerThird {
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+
+	.centered {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.titleStyle {
+		font-size: 4rem;
+	}
+	.image {
+		min-width: 50%;
+		height: 80%;
+		align-items: center;
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+		opacity: 0.9;
+	}
+
+	.image:hover {
+		transform: scale(1.05);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		opacity: 1;
+	}
 }

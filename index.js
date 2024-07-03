@@ -1,3 +1,4 @@
+// mobile navigation
 const burgerBtn = document.querySelector(".burgerBtn");
 const mobileNavigation = document.querySelector(".mobileNavigation");
 const items = document.querySelector(".mobileNavigation__items");
@@ -17,3 +18,5 @@ const activeNavigation = () => {
 };
 
 burgerBtn.addEventListener("click", activeNavigation);
+
+// end mobile navigation

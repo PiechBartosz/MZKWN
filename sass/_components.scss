@@ -1,0 +1,48 @@
+@use "./colors" as colors;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: colors.$mainColor;
+}
+
+li {
+	list-style: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: colors.$text;
+}
+
+h2,
+h1,
+h3 {
+	text-transform: uppercase;
+}
+
+main {
+	margin-top: 10rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}

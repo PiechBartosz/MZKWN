@@ -71,6 +71,7 @@ main {
   font-size: 1.4rem;
   line-height: 1.6;
   margin: 4rem 2rem;
+  padding: 2rem;
 }
 
 .image {
@@ -102,6 +103,10 @@ main {
 @media (min-width: 576px) and (max-width: 767px) {
   .titleStyle {
     font-size: 2.5rem;
+  }
+  .text {
+    margin: 4rem 2rem;
+    padding: 4rem;
   }
 }
 @media (min-width: 768px) {
@@ -316,4 +321,63 @@ main {
 .section {
   position: relative;
   width: 100%;
+}
+
+.contactme {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3Big.JPG");
+  padding: 10px 10px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contactme__text {
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.6rem;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: white;
+}
+.contactme__btn {
+  padding: 1em 1.5em;
+  margin-top: 30px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid #1a9cad;
+  font-size: 1.6rem;
+  transition: background-color 0.8s ease;
+}
+.contactme__btn a {
+  color: black;
+  font-weight: bold;
+  transition: color 0.8s ease;
+}
+
+.contactme__btn:hover,
+.contactme__btn:focus {
+  background-color: #fff;
+}
+.contactme__btn:hover a,
+.contactme__btn:focus a {
+  color: #1a9cad;
+}
+
+@media (min-width: 768px) {
+  .contactme {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/3Big.JPG");
+    background-attachment: fixed;
+    height: 40rem;
+    margin-top: 10rem;
+  }
+  .contactme__text {
+    font-size: 4rem;
+  }
 }/*# sourceMappingURL=main.css.map */

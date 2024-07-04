@@ -22,6 +22,7 @@
 		border: none;
 		cursor: pointer;
 		color: colors.$logo;
+		background-color: colors.$mainColor;
 		transition: color 0.8s ease;
 		border: 1px solid colors.$logo;
 	}

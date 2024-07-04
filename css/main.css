@@ -617,6 +617,7 @@ main {
   border: none;
   cursor: pointer;
   color: #1a9cad;
+  background-color: white;
   transition: color 0.8s ease;
   border: 1px solid #1a9cad;
 }

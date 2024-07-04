@@ -1,0 +1,91 @@
+@use "./colors" as colors;
+
+.accordion {
+	background-image: url("../images/logo/SVG/Zasób.svg");
+	padding-bottom: 7rem;
+	padding-top: 7rem;
+	background-position: center;
+	background-attachment: fixed;
+
+	&__box {
+		font-size: 2rem;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1.6rem;
+		width: 100%;
+		font-size: 1.8rem;
+		text-align: left;
+		border: none;
+		cursor: pointer;
+		color: colors.$logo;
+		transition: color 0.8s ease;
+		border: 1px solid colors.$logo;
+	}
+	&__btn:hover,
+	&__btn:focus {
+		background-color: white;
+		background-color: colors.$logo;
+		color: whitesmoke;
+	}
+
+	&__btn:hover .accordion__icon__first,
+	&__btn:focus .accordion__icon__first {
+		background-color: white;
+	}
+
+	&__btn:hover .accordion__icon__second,
+	&__btn:focus .accordion__icon__second {
+		background-color: white;
+	}
+
+	&__text-box {
+		margin-left: 10px;
+		padding: 1rem 2rem;
+		display: none;
+		color: colors.$text;
+		font-size: 1.5rem;
+		line-height: 1.4;
+		backdrop-filter: blur(8px);
+	}
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		position: relative;
+
+		&__first {
+			background-color: colors.$logo;
+			position: absolute;
+			height: 4px;
+			width: 30px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: transform 0.5s ease, background-color 0.8s ease;
+		}
+		&__second {
+			background-color: colors.$logo;
+			position: absolute;
+			width: 4px;
+			height: 30px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			transition: transform 0.5s ease, background-color 0.8s ease;
+		}
+	}
+
+	&__active {
+		display: block;
+	}
+}
+
+.rotate {
+	transform: translate(-50%, -50%) rotate(90deg);
+}

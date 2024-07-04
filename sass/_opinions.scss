@@ -1,0 +1,114 @@
+@use "./colors" as colors;
+
+.opinions {
+	padding: 8rem 1rem;
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0.5),
+			rgba(255, 255, 255, 0.5)
+		),
+		url("../images/logo/logo4.png");
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	&__title {
+		text-transform: uppercase;
+		font-size: 3rem;
+		line-height: 1.1667;
+		letter-spacing: 0.03em;
+
+		color: colors.$text;
+
+		text-align: center;
+		font-weight: bold;
+		padding: 4rem;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		gap: 2rem;
+		transform-origin: center center;
+	}
+
+	&__card {
+		position: relative;
+		width: 90%;
+		border: 1px solid colors.$logo;
+		align-items: flex-end;
+		height: 30rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		border-radius: 20px;
+		gap: 20px;
+		transform-origin: center center;
+		transition: border 0.8s ease, box-shadow 0.8s ease, color 0.8s ease;
+		background: linear-gradient(
+			to right top,
+			rgba(255, 255, 255, 0.75),
+			rgba(255, 255, 255, 0.25)
+		);
+		backdrop-filter: blur(8px);
+
+		i {
+			position: absolute;
+			top: 0;
+			right: 0;
+			font-size: 12rem;
+			color: colors.$logo;
+			transition: color 0.8s ease;
+			padding-right: 10px;
+			opacity: 0.3;
+		}
+
+		&__title {
+			font-size: 1.8rem;
+			text-align: center;
+			transition: color 1s ease;
+			background-color: colors.$logo;
+			color: #fff;
+			border-radius: 10px;
+			padding: 10px;
+			margin: 10px;
+		}
+		&__text {
+			padding: 0 20px;
+			font-size: 13px;
+			padding-top: 3rem;
+			z-index: 1;
+		}
+	}
+}
+.opinions__card:hover,
+.opinions__card:focus {
+	border: 1px solid white;
+	box-shadow: 0px 8px 16px 0px #fff;
+
+	i {
+		color: white;
+	}
+	h4 {
+		color: #fff;
+	}
+}
+
+@media (min-width: 768px) {
+	.opinions {
+		&__wrapper {
+			flex-direction: row;
+		}
+		&__card {
+			flex-grow: 1;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.opinions {
+		&__wrapper {
+			gap: 5rem;
+		}
+	}
+}

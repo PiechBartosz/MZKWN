@@ -1,0 +1,106 @@
+@use "./colors" as colors;
+
+.contact {
+	background-color: colors.$mainColor;
+
+	&__title {
+		text-transform: uppercase;
+		font-size: 30px;
+		line-height: 1.1667;
+		letter-spacing: 0.03em;
+		// color: colors.$logo;
+		color: colors.$text;
+		text-align: center;
+		font-weight: bold;
+		margin: 4rem;
+	}
+
+	&__map {
+		iframe {
+			width: 100%;
+			height: 400px;
+		}
+	}
+	&__wrapper {
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&__text {
+		font-style: normal;
+		font-size: 1.6rem;
+		letter-spacing: 0.03em;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: 1.6;
+		gap: 10px;
+	}
+	&__text-link {
+		font-family: "Cormorant Garamond", serif;
+		// color: colors.$logo;
+		color: colors.$text;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 2rem;
+		font-weight: bold;
+		padding: 0.2rem;
+		transition: color 0.6s ease;
+		line-height: 1.2;
+		// text-transform: lowercase;
+		&:hover,
+		&:focus {
+			// color: colors.$pink;
+			color: colors.$logo;
+		}
+
+		i {
+			margin-right: 0.5rem;
+			// color: colors.$pink;
+			color: colors.$logo;
+		}
+	}
+	&__socials {
+		margin: 2rem;
+	}
+}
+
+.footer {
+	background-color: colors.$logo;
+	border-top: 1px solid rgba(255, 255, 255, 0.6);
+	&__text {
+		padding: 1rem;
+		text-align: center;
+		color: #fff;
+		font-size: 1.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		img {
+			margin-left: 10px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.contact {
+		background-color: colors.$mainColor;
+
+		&__text {
+			flex-direction: row;
+			gap: 3rem;
+		}
+		&__socials {
+			display: flex;
+			gap: 20px;
+			padding-top: 10px;
+			border-top: 1px solid colors.$logo;
+		}
+	}
+}

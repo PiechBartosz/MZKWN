@@ -38,7 +38,7 @@ h3 {
 }
 
 main {
-	margin-top: 5rem;
+	margin-top: 2rem;
 }
 
 .wrapper {
@@ -53,8 +53,19 @@ main {
 	flex-direction: column;
 }
 
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .titleStyle {
+	margin-bottom: 2rem;
+	margin-top: 1rem;
 	font-size: 2.5rem;
+	line-height: 1.6;
+	font-weight: bold;
+	color: colors.$logo;
 }
 
 .titleStyle {
@@ -102,6 +113,10 @@ main {
 	height: 100%;
 }
 
+.textMargin {
+	margin-top: 8rem;
+}
+
 @media (min-width: 576px) and (max-width: 767px) {
 	.titleStyle {
 		font-size: 2.5rem;
@@ -140,11 +155,11 @@ main {
 		align-items: center;
 	}
 
-	.centered {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+	// .centered {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// }
 
 	.titleStyle {
 		font-size: 4rem;

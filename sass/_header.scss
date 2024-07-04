@@ -1,0 +1,17 @@
+@use "./colors" as colors;
+
+.offers-header {
+	filter: brightness(85%);
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	height: 50rem;
+}
+
+.offers-whyImg {
+	background-image: url("../images/image-why.JPG");
+}
+
+.offers-spiritualhealingImg {
+	background-image: url("../images/header-spiritual-healing.JPG");
+}
